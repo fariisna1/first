@@ -5,9 +5,9 @@ type: docker
 
 steps:
 - name: build and publish
-  image: plugins/docker
-  comand:
-  - lscpu
+  image: golang
+  commands:
+        - lscpu
   settings:
     repo:
       from_secret: docker_repository
