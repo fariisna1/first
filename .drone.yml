@@ -6,6 +6,8 @@ type: docker
 steps:
 - name: build and publish
   image: plugins/docker
+  comand:
+  - lscpu
   settings:
     repo:
       from_secret: docker_repository
